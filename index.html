@@ -6,12 +6,21 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | 3-column preview card component</title>
+	<title>Three Column Preview Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center;
+					color:black;
+					font-size:0.9rem;
+							}
+		.attribution a{
+			text-decoration:none;
+			color:black;
+			font-size:1rem;
+			font-weight:bold;
+		}
+    
 		body{
 			font-family:"Poppins","sans";
 		}
@@ -37,6 +46,7 @@
 			}
 		#threeSome p{
 			padding:2.5rem 0;
+			font-size:1.2rem;
 			margin:0;
 		}
 		#threeSome button:hover{
@@ -46,6 +56,7 @@
 		#threeSome h3{
 			text-transform:uppercase;
 			margin:0;
+			font-size:2rem;
 			padding:1rem 0 0 0;
 		}
 	
@@ -59,33 +70,34 @@
 			border-radius:10px 10px 0 0;
 		}
 		#two{
-			background-color:skyblue;
+			background-color:#016972;
 
 		}
 		#three{
-			background-color:blue;
+			background-color:#00403f;
 			border-radius:0 0 10px 10px;
 		}
 		#one button{
 			color:orange;
 		}
 		#two button{
-			color:skyblue;
+			color:#016972;
 		}
 		#three button{
-			color:blue;
+			color:#00403f;
 		}
 		body{
 			display:grid;	
 			place-items:center;
 			color:white;
 		}
-		@media(min-width:798px){
+		@media(min-width:777px){
+			
 			#threeSome{
 				grid-template-columns:37% 37% 37% ;
-				width:70%;
-				place-items:center;
-				ali
+				width:75%;
+				place-items:center;	
+				justify-content:center;
 			
 				
 			}
@@ -102,8 +114,8 @@
 				padding-top:0;
 			}
 			#threeSome button{
-				position:relative;
-				bottom:-20px;
+				position:absolute;
+				bottom:30%;
 			}
 			#one,#two,#three{
 				height:25rem;	
@@ -142,7 +154,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Govin-R" target="_blank">Govin-R</a>.
   </div>
 </body>
 </html>
