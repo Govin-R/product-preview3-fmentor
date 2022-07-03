@@ -12,41 +12,133 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-
+		body{
+			font-family:"Poppins","sans";
+		}
 		#threeSome{
 			display:grid;
-			height:100vh;
+			
 			width:80%;	
 			grid-template-columns: auto; 
-			place-items:center;	
+			place-items:center;
+			
 		
 		}
+		#threeSome button{
+			border:0.2rem solid white;
+			outline:none;
+			background-color:white;
+			padding:0.5rem 1rem;
+			font-size:1rem;
+			border-radius:99px;
+			transition:all 300ms ease-out;
+			font-weight:bold;
+		
+			}
+		#threeSome p{
+			padding:2.5rem 0;
+			margin:0;
+		}
+		#threeSome button:hover{
+			background-color:transparent;
+			color:white;
+		}
+		#threeSome h3{
+			text-transform:uppercase;
+			margin:0;
+			padding:1rem 0 0 0;
+		}
+	
 		#one, #two ,#three{
-			width:80%;
-			height:24rem;
+			padding:3rem;
+			font-size:1rem;
+			
+		}
+		#one{
+			background-color:orange;
+			border-radius:10px 10px 0 0;
+		}
+		#two{
+			background-color:skyblue;
+
+		}
+		#three{
+			background-color:blue;
+			border-radius:0 0 10px 10px;
+		}
+		#one button{
+			color:orange;
+		}
+		#two button{
+			color:skyblue;
+		}
+		#three button{
+			color:blue;
 		}
 		body{
-			display:grid;
-			height:100vh;
+			display:grid;	
 			place-items:center;
+			color:white;
+		}
+		@media(min-width:798px){
+			#threeSome{
+				grid-template-columns:37% 37% 37% ;
+				width:70%;
+				place-items:center;
+				ali
+			
+				
+			}
+			#threeSome h3{
+				font-weight:bold;
+				font-size:2rem;
+				margin:0;
+				border:0;
+				padding:1rem 0;
+			}
+			#threeSome p{
+				font-size:1rem;
+				font-weight:bold;
+				padding-top:0;
+			}
+			#threeSome button{
+				position:relative;
+				bottom:-20px;
+			}
+			#one,#two,#three{
+				height:25rem;	
+			}
+			#one{
+				border-radius:10px 0 0 10px;
+			}#three{
+				border-radius:0 10px 10px 0;
+			}
+			body{
+				height:100vh;
+			}
 		}
   </style>
 </head>
 <body>
 	<div id=threeSome><div id="one">
+			<img src="./images/icon-sedans.svg" alt="sedans image"/>
 			<h3>Sedans</h3>
 			<p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-	or on your next road trip.</p>
+			or on your next road trip.</p><button>Learn More</button>
 	</div>
 	<div id="two">
+		<img src="./images/icon-suvs.svg" alt="suvs image"/>
 		<h3>SUVs</h3>
 		<p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-		and off-road adventures.</p>
+		and off-road adventures.</p><button>Learn More</button>
 	</div>
 	<div id="three">
+		<img src="./images/icon-luxury.svg" alt="luxury image"/>
 		<h3>Luxury</h3>
 		<p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-		rental and arrive in style.</p></div></div>
+		rental and arrive in style.</p>
+		<button>Learn More</button>	
+	</div></div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
